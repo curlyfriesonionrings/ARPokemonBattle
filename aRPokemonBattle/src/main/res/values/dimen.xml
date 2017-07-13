@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="window_height">96dp</dimen>
+    <dimen name="window_margin">2dp</dimen>
+    <dimen name="window_padding">5dp</dimen>
+
+    <dimen name="main_menu_button_width">180dp</dimen>
+    <dimen name="main_menu_button_height">100dp</dimen>
+
+    <dimen name="choice_button_min_dimen">10dp</dimen>
+    <dimen name="choice_icon_dimen">18dp</dimen>
+    <dimen name="move_button_start_margin">12dp</dimen>
+
+    <dimen name="stat_window_height">58dp</dimen>
+    <dimen name="stat_window_width">125dp</dimen>
+    <dimen name="stat_window_padding">4dp</dimen>
+    <dimen name="stat_window_right_margin">8dp</dimen>
+
+    <dimen name="stat_opp_window_height">40dp</dimen>
+    <dimen name="stat_opp_window_margin">8dp</dimen>
+
+    <dimen name="hp_bar_width">85dp</dimen>
+    <dimen name="hp_bar_height">5dp</dimen>
+    <dimen name="hp_top_margin">5dp</dimen>
+    <dimen name="hp_label_text_size">10sp</dimen>
+
+    <dimen name="pokemon_select_list_item_height">86dp</dimen>
+    <dimen name="pokemon_select_list_side_margin">8dp</dimen>
+    <dimen name="pokemon_select_list_name_top_margin">8dp</dimen>
+    <dimen name="pokemon_select_list_name_bottom_margin">6dp</dimen>
+    <dimen name="pokemon_select_pokeball_size">24dp</dimen>
+
+    <dimen name="bag_item_list_height">40dp</dimen>
+    <dimen name="bag_item_list_start_margin">26dp</dimen>
+    <dimen name="bag_item_list_end_margin">8dp</dimen>
+    <dimen name="bag_item_list_start_end_margin">4dp</dimen>
+</resources>

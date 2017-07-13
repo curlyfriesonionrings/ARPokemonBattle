@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/bag_item_list_height"
+    android:layout_marginStart="@dimen/bag_item_list_start_end_margin"
+    android:layout_marginEnd="@dimen/bag_item_list_start_end_margin"    >
+
+    <ImageView
+        android:id="@+id/itemSelectedCursor"
+        android:src="@drawable/ic_play_arrow_black_18dp"
+        android:layout_width="@dimen/choice_icon_dimen"
+        android:layout_height="@dimen/choice_icon_dimen"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingStart="@dimen/bag_item_list_start_margin"
+
+        android:text="Potion"
+        android:textColor="@android:color/black"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        />
+
+    <TextView
+        android:id="@+id/itemQty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:paddingEnd="@dimen/bag_item_list_end_margin"
+
+        android:text="x 1"
+        android:textColor="@android:color/black"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        />
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/pokemon_select_list_item_height"
+    android:layout_marginStart="@dimen/pokemon_select_list_side_margin"
+    android:layout_marginEnd="@dimen/pokemon_select_list_side_margin">
+
+    <ImageView
+        android:id="@+id/pokemonSelectIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/ic_bulbasaur"
+        />
+
+    <ImageView
+        android:id="@+id/pokemonSelectPokeball"
+        android:layout_width="@dimen/pokemon_select_pokeball_size"
+        android:layout_height="@dimen/pokemon_select_pokeball_size"
+
+        android:layout_alignEnd="@+id/pokemonSelectIcon"
+        android:layout_alignBottom="@+id/pokemonSelectIcon"
+        android:layout_marginEnd="@dimen/pokemon_select_list_side_margin"
+        android:layout_marginBottom="@dimen/pokemon_select_list_side_margin"
+        android:src="@drawable/ic_pokeball"
+        />
+
+    <TextView
+        android:id="@+id/pokemonSelectSpecies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_toEndOf="@+id/pokemonSelectIcon"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/pokemon_select_list_name_top_margin"
+        android:layout_marginBottom="@dimen/pokemon_select_list_name_bottom_margin"
+
+        android:text="Bulbasaur"
+        android:textColor="@android:color/black"
+        style="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/pokemonSelectLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/pokemon_select_list_name_top_margin"
+        android:layout_marginBottom="@dimen/pokemon_select_list_name_bottom_margin"
+
+        android:text="Lv 15"
+        android:textColor="@android:color/black"
+        style="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/pokemonSelectMoveListLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/pokemonSelectSpecies"
+        android:layout_toEndOf="@+id/pokemonSelectIcon"
+        android:text="Move List:"
+        android:textColor="@android:color/black"
+        style="?android:textAppearanceSmall"
+        />
+    <TextView
+        android:id="@+id/pokemonSelectMoveList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+
+        android:layout_below="@+id/pokemonSelectMoveListLabel"
+        android:layout_toEndOf="@+id/pokemonSelectIcon"
+        android:text="Growl, Tackle, Vine Whip, Razor Leaf"
+        android:textColor="@android:color/black"
+        style="?android:textAppearanceSmall"
+        />
+
+</RelativeLayout>

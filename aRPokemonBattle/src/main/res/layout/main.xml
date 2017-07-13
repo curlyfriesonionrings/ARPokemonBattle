@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <!-- Message dialog window fragment -->
+    <FrameLayout
+        android:id="@+id/windowFragment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/window_height"
+        android:background="@drawable/gray_border_thick"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/window_margin">
+    </FrameLayout>
+
+    <!-- START Player Pokemon window-->
+    <RelativeLayout
+        android:id="@+id/playerPokemonWindow"
+        android:orientation="vertical"
+        android:layout_width="@dimen/stat_window_width"
+        android:layout_height="@dimen/stat_window_height"
+        android:layout_above="@+id/windowFragment"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/gray_border_thin"
+        android:padding="@dimen/stat_window_padding"
+        android:layout_marginEnd="@dimen/stat_window_right_margin">
+        <TextView
+            android:id="@+id/pokemonNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Pikachu"
+            android:textColor="@android:color/black"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+        <TextView
+            android:id="@+id/pokemonLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:text="Lv 10"
+            android:textColor="@android:color/black"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+
+        <!-- START HP alignment -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/pokemonLevelText">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/window_padding"
+                android:layout_weight="0.2"
+                android:gravity="end"
+
+                android:text="HP:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/hp_label_text_size"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+                <View
+                    android:id="@+id/hpBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hp_bar_height"
+                    android:background="@color/hp_green"
+                    android:layout_marginTop="@dimen/hp_top_margin"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/hpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+
+            android:text="30/30"
+            android:textColor="@android:color/black"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+        <!-- END HP alignment-->
+
+    </RelativeLayout>
+    <!-- END Player Pokemon window -->
+
+    <!-- START Opponent Pokemon window-->
+    <RelativeLayout
+        android:id="@+id/opponentPokemonWindow"
+        android:orientation="vertical"
+        android:layout_width="@dimen/stat_window_width"
+        android:layout_height="@dimen/stat_opp_window_height"
+        android:background="@drawable/gray_border_thin"
+        android:padding="@dimen/stat_window_padding"
+        android:layout_marginTop="@dimen/stat_opp_window_margin"
+        android:layout_marginStart="@dimen/stat_opp_window_margin">
+        <TextView
+            android:id="@+id/oppPokemonNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Bulbasaur"
+            android:textColor="@android:color/black"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+        <TextView
+            android:id="@+id/oppPokemonLevelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+
+            android:text="Lv 10"
+            android:textColor="@android:color/black"
+            android:textAppearance="@android:style/TextAppearance.Small"/>
+
+        <!-- START HP alignment -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/oppPokemonLevelText">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/window_padding"
+                android:layout_weight="0.2"
+                android:gravity="end"
+
+                android:text="HP:"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/hp_label_text_size"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+                <View
+                    android:id="@+id/oppHpBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hp_bar_height"
+                    android:background="@color/hp_green"
+                    android:layout_marginTop="@dimen/hp_top_margin"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- END HP alignment-->
+
+    </RelativeLayout>
+    <!-- END Opponent Pokemon window -->
+</RelativeLayout>

@@ -1,0 +1,188 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_border_thick"
+    tools:context=".Window.MoveListWindowFragment">
+
+    <!-- START Move list window -->
+    <RelativeLayout
+        android:id="@+id/leftChoiceWindow"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:columnCount="2"
+        android:padding="@dimen/window_padding">
+
+        <View
+            android:id="@+id/centerVerticalShim"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/centerHorizontalShim"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible" />
+
+        <FrameLayout
+            android:id="@+id/moveCursor"
+            android:layout_width="@dimen/choice_icon_dimen"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/centerVerticalShim">
+            <ImageView
+                android:src="@drawable/ic_play_arrow_black_18dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+        </FrameLayout>
+
+        <Button
+            android:id="@+id/move1Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/choice_button_min_dimen"
+            android:minWidth="@dimen/choice_button_min_dimen"
+
+            android:layout_above="@+id/centerVerticalShim"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/centerHorizontalShim"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginStart="@dimen/move_button_start_margin"
+            android:text="Tail Whip"
+            android:textColor="@android:color/black"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:gravity="start|center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/move2Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/choice_button_min_dimen"
+            android:minWidth="@dimen/choice_button_min_dimen"
+
+            android:layout_above="@+id/centerVerticalShim"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/centerHorizontalShim"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="@dimen/move_button_start_margin"
+            android:text="Thunder Shock"
+            android:textColor="@android:color/black"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:gravity="start|center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/move3Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/choice_button_min_dimen"
+            android:minWidth="@dimen/choice_button_min_dimen"
+
+            android:layout_below="@+id/centerVerticalShim"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/centerHorizontalShim"
+            android:layout_alignParentStart="true"
+
+            android:layout_marginStart="@dimen/move_button_start_margin"
+            android:text="Quick Attack"
+            android:textColor="@android:color/black"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:gravity="start|center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:id="@+id/move4Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/choice_button_min_dimen"
+            android:minWidth="@dimen/choice_button_min_dimen"
+
+            android:layout_below="@+id/centerVerticalShim"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/centerHorizontalShim"
+            android:layout_alignParentEnd="true"
+
+            android:layout_marginStart="@dimen/move_button_start_margin"
+            android:text="Slam"
+            android:textColor="@android:color/black"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:gravity="start|center_vertical"
+            style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+    <!-- END Move list window-->
+
+    <View
+        android:layout_width="@dimen/window_padding"
+        android:layout_height="match_parent"
+        android:background="@color/gray"/>
+
+    <!-- START Info window -->
+    <LinearLayout
+        android:id="@+id/rightChoiceWindow"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:padding="@dimen/window_padding">
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+
+                android:text="PP"
+                android:textColor="@android:color/black"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+            <TextView
+                android:id="@+id/ppFractionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+
+                android:text="-/-"
+                android:textColor="@android:color/black"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+
+                android:text="Type/"
+                android:textColor="@android:color/black"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+            <TextView
+                android:id="@+id/typeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+
+                android:text="-"
+                android:textColor="@android:color/black"
+                android:textAppearance="@android:style/TextAppearance.Medium"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <!-- END Info window -->
+
+</LinearLayout>

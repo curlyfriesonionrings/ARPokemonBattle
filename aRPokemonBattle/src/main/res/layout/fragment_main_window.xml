@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray_border_thick"
+    tools:context=".Window.MainWindowFragment">
+
+    <!-- START Left hand side -->
+    <TextView
+        android:id="@+id/leftActionWindow"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:padding="@dimen/window_padding"
+
+        android:textColor="@android:color/black"
+        android:text="What will you do?"
+        android:textAppearance="@android:style/TextAppearance.Medium"/>
+    <!-- END Left hand side-->
+
+    <View
+        android:layout_width="@dimen/window_padding"
+        android:layout_height="match_parent"
+        android:background="@color/gray"/>
+
+    <!-- START Right hand side -->
+    <LinearLayout
+        android:id="@+id/rightActionWindow"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+            <Button
+                android:id="@+id/fightButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="FIGHT"
+                android:textColor="@android:color/black"
+                style="?android:attr/borderlessButtonStyle"
+                />
+            <Button
+                android:id="@+id/bagButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="BAG"
+                android:textColor="@android:color/black"
+                style="?android:attr/borderlessButtonStyle"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+            <Button
+                android:id="@+id/pokemonButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="POKÉMON"
+                android:textColor="@android:color/black"
+                style="?android:attr/borderlessButtonStyle"
+                />
+            <Button
+                android:id="@+id/runButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="RUN"
+                android:textColor="@android:color/black"
+                style="?android:attr/borderlessButtonStyle"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- END Right hand side -->
+
+</LinearLayout>

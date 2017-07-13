@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">ARPokémonBattle</string>
+
+    <string name="mode_select">Select mode</string>
+    <string name="mode_host">Host</string>
+    <string name="mode_connect">Connect</string>
+    <string name="mode_local">Local</string>
+    <string name="mode_host_desc">Allow an opponent to connect for a match</string>
+    <string name="mode_connect_desc">Search for and connect to a host</string>
+    <string name="mode_local_desc">Take on a computer-controlled opponent</string>
+    <string name="mode_host_title">Host Mode</string>
+    <string name="mode_connect_title">Connect Mode</string>
+
+    <!-- Pokemon Select -->
+    <string name="select_pokemon">Select your Pokémon</string>
+    <string name="ready_question">Ready?</string>
+    <string name="choose_pokemon">I choose you!</string>
+
+    <!-- DeviceListActivity -->
+    <string name="scanning">Scanning for devices&#8230;</string>
+    <string name="select_device">Select a device to connect to</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+
+    <!-- Bluetooth -->
+    <string name="secure_connect">Make a secure connection</string>
+    <string name="make_discoverable">Make discoverable</string>
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Exiting.</string>
+    <string name="title_connecting">Connecting&#8230;</string>
+    <string name="title_connected_to">Connected to <xliff:g id="device_name">%1$s</xliff:g></string>
+    <string name="title_not_connected">Not connected</string>
+    <string name="title_host_waiting">Waiting for connection</string>
+    <string name="title_opp_ready">Opponent is ready</string>
+
+    <!-- Game Messsages -->
+    <string name="message_super_effective">It\'s super effective!</string>
+    <string name="message_not_effective">It\'s not very effective...</string>
+    <string name="message_miss">But it missed...!</string>
+    <string name="message_win">You were victorious!</string>
+    <string name="message_lose">What a soul-crushing defeat!</string>
+    <string name="message_waiting">Waiting for opponent...</string>
+    <string name="message_pokemon">This is your only Pokémon!</string>
+    <string name="message_run">You\'ll have to run in real life!</string>
+    <string name="message_exhaust">lost the will to fight!</string>
+    <string name="message_draw1">Both Pokémon have lost the will to fight!</string>
+    <string name="message_draw2">It\'s a stalemate!</string>
+
+    <string name="select_item">Select an item</string>
+</resources>
